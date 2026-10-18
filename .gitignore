@@ -1,0 +1,36 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyd
+
+# Private Keys, Credentials, and Environment Variables
+*.env
+*.pem
+*.key
+*credential*
+*secret*
+*token*
+config.json
+
+# Model Binary Weights (Protects Proprietary Alpha Weights)
+*.pt
+*.pth
+*.onnx
+*.bin
+*_weights.pkl
+*.joblib
+
+# Large Raw Data Archives (Keep local)
+*.gz
+*.parquet
+*.zip
+*.tar
+Documents/data/
+
+# OS and Editor metadata
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
