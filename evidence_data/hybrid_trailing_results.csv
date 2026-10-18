@@ -1,6 +1,0 @@
-Total_Trades,Win_Trades,Loss_Trades,Win_Rate_Pct,Net_Profit_USD,Net_Return_Pct,Ending_Balance_USD,Profit_Factor,Payoff_Ratio,Avg_Win_USD,Avg_Loss_USD,Avg_Trade_USD,Max_Drawdown_Pct,Max_Drawdown_USD,Sharpe_Ratio,Avg_Hold_Hours,Exit_Reasons,Configuration
-416,186,230,44.71,4079.21,27.19,19079.21,1.1,1.36,249.6,-184.11,9.81,26.3,5167.41,0.712,4.6,"{'SL': 224, 'TP': 180, 'EOD_FLATTEN': 12}",Fixed SL 1.5 ATR + TP 1:1.5 (Standard Benchmark)
-416,156,260,37.5,4637.71,30.92,19637.71,1.13,1.88,259.35,-137.77,11.15,22.19,4335.22,0.858,3.9,"{'SL': 254, 'TP': 153, 'EOD_FLATTEN': 8, 'SL_TIE': 1}",Break-Even at +1.0R Profit + TP 1:1.5
-416,124,292,29.81,6786.86,45.25,21786.86,1.18,2.77,365.37,-131.91,16.31,17.57,4221.14,1.053,4.8,"{'SL': 286, 'TP': 118, 'EOD_FLATTEN': 11, 'SL_TIE': 1}",Break-Even at +1.0R Profit + TP 1:2.0
-416,182,234,43.75,4978.83,33.19,19978.83,1.21,1.55,158.73,-102.18,11.97,15.12,2650.17,1.087,2.8,"{'SL': 408, 'EOD_FLATTEN': 8}","Dynamic Trailing Stop (1.5 ATR Trail, No Fixed TP)"
-416,190,226,45.67,3742.57,24.95,18742.57,1.21,1.44,113.2,-78.61,9.0,13.0,2154.9,1.179,1.7,"{'SL': 356, 'TP': 54, 'SL_TIE': 5, 'EOD_FLATTEN': 1}",Break-Even at +1.0R + Trailing Stop (1.0 ATR Trail)

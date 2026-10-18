@@ -1,7 +1,0 @@
-System,Ending_Balance_USD,Net_Profit_USD,Net_Return_Pct,Gross_Return_Pct,Cost_Drag_USD,Gross_Sharpe,Net_Sharpe,Profit_Factor,Payoff_Ratio,Win_Rate_Pct,Avg_Win_USD,Avg_Loss_USD,Avg_Trade_USD,Max_Drawdown_Pct,Total_Trades
-"1. Pure MACD (12,26,9) Unconstrained",8336.01,-6663.99,-44.43,-11.38,5130.43,-0.165,-1.283,0.88,1.52,36.62,46.26,-30.51,-2.39,49.04,3170
-2. MACD + DXY Filter,10039.24,-4960.76,-33.07,-15.11,2897.72,-0.475,-1.291,0.84,1.48,36.33,51.44,-34.74,-3.43,40.06,1613
-3. MACD + US10Y Filter,9940.88,-5059.12,-33.73,-15.83,2792.79,-0.495,-1.304,0.83,1.41,37.08,45.46,-32.28,-3.45,41.8,1621
-4. MACD + Dual Macro (DXY & US10Y Confirm),12001.2,-2998.8,-19.99,-8.2,1801.48,-0.348,-1.007,0.8,1.41,36.15,50.13,-35.56,-4.59,27.55,924
-5. MACD Zero-Line + Dual Macro,14219.61,-780.39,-5.2,4.44,1369.63,0.307,-0.264,0.87,1.75,33.23,58.37,-33.45,-2.93,14.59,647
-6. MACD + Dual Macro + 1-Trade-A-Day (EOD Flat),14007.04,-992.96,-6.62,-2.94,565.54,-0.259,-0.636,0.8,1.73,31.75,55.39,-32.01,-4.27,7.44,252

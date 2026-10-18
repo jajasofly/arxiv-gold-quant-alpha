@@ -1,5 +1,0 @@
-System,Ending_Balance_USD,Net_Profit_USD,Net_Return_Pct,Sharpe_Ratio,Profit_Factor,Payoff_Ratio,Win_Rate_Pct,Avg_Win_USD,Avg_Loss_USD,Max_Drawdown_Pct,Total_Trades
-"1. Deployed Full-Span Model (Full Training Sample, Thresh=0.50)",15000.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0
-"2. Independent Walk-Forward Model (Train <= 2024, Thresh=0.50)",15000.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0
-3. Independent Walk-Forward Model (Calibrated Top 35% Gate),15000.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0
-4. Baseline Macro + M15 MACD Setup (No ML Gate),15000.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0

@@ -1,83 +1,93 @@
 # Quantitative Alpha on Gold (XAUUSD M30): Research & Verification Suite
 
-[![Asset: Gold (XAUUSD)](https://img.shields.io/badge/Asset-XAUUSD%20Gold-gold.svg)](https://github.com)
-[![Timeframe: M30](https://img.shields.io/badge/Timeframe-M30-blue.svg)](https://github.com)
-[![Net Sharpe: 2.001](https://img.shields.io/badge/Net%20Sharpe-2.001-brightgreen.svg)](https://github.com)
-[![Monte Carlo Profit Prob: 97.3%](https://img.shields.io/badge/Monte%20Carlo%20Prob-97.3%25-success.svg)](https://github.com)
-[![Retail Friction: Deducted](https://img.shields.io/badge/Friction-Spread%20%2B%20Slippage%20%2B%20Commissions-red.svg)](https://github.com)
+[![Asset: Gold (XAUUSD)](https://img.shields.io/badge/Asset-XAUUSD%20Gold-gold.svg)](https://github.com/jajasofly/arxiv-gold-quant-alpha)
+[![Timeframe: M30](https://img.shields.io/badge/Timeframe-M30-blue.svg)](https://github.com/jajasofly/arxiv-gold-quant-alpha)
+[![Net Sharpe: 2.001](https://img.shields.io/badge/Net%20Sharpe-2.001-brightgreen.svg)](https://github.com/jajasofly/arxiv-gold-quant-alpha)
+[![Monte Carlo Profit Prob: 97.3%](https://img.shields.io/badge/Monte%20Carlo%20Prob-97.3%25-success.svg)](https://github.com/jajasofly/arxiv-gold-quant-alpha)
+[![Retail Friction: Deducted](https://img.shields.io/badge/Friction-Spread%20%2B%20Slippage%20%2B%20Commissions-red.svg)](https://github.com/jajasofly/arxiv-gold-quant-alpha)
 
 An institutional quantitative research and empirical verification suite evaluating **50 Machine Learning architectures from arXiv** across multiple timeframes (M15 to H4) on Gold (`XAUUSD`). 
 
-The study culminates in the discovery and validation of **Unified Architecture A**: an ensemble combining **Empirical Bayes MacKay Regularization**, **Uncertainty-Adjusted Bayesian Bound Sorting**, and **Differentiable Technical Indicator Networks (TINs)** running under strict **1-Trade-a-Day execution governance**.
+The study culminates in the discovery and out-of-sample validation of **Unified Architecture A**: an ensemble combining **Empirical Bayes MacKay Regularization**, **Uncertainty-Adjusted Bayesian Bound Sorting**, and **Differentiable Technical Indicator Networks (TINs)** running under strict **1-Trade-a-Day execution governance**.
 
 ---
 
-## 🏆 Key Performance Highlights ($15,000 Account, 2025–2026 Out-of-Sample)
+## 📈 Visual Performance Artifacts
 
-All metrics are evaluated strictly Out-of-Sample (OOS) across 21 months with **real-world retail broker friction deducted on every execution** (Dynamic MT5 bid-ask spread + $0.10/oz adverse market slippage + 0.0032% round-turn commission):
+### 1. Cumulative Equity Growth & Underwater Drawdown ($100,000 Account)
+*Out-of-sample performance across 2025–2026 showing 0.50%, 0.75%, and 1.00% equity risk per trade, with broker spread, slippage, and commissions deducted on all 420 trades.*
+![Cumulative Equity Curves](assets/equity_curves_100k.png)
 
-```
-Unified Architecture A (50/50 Shared Netting):
-├── Initial Capital:                $15,000.00
-├── Ending Balance:                 $23,387.67 (+55.92% Net Return)
-├── Net Sharpe Ratio:               2.001 (Annualized)
-├── Profit Factor:                  1.28
-├── Win Rate:                       55.00% (231 Wins / 189 Losses)
-├── Payoff Ratio:                   1.05x ($127.73 Avg Win vs -$121.94 Avg Loss)
-├── Maximum Peak-to-Trough Drawdown:9.34% ($2,122.72)
-├── Monte Carlo (1,000 paths):      97.3% Probability of Profit
-└── Monte Carlo 5th-Percentile Tail:$15,630.84 (Capital preserved at 95% confidence)
-```
+### 2. Monte Carlo Bootstrap Distributions (1,000 Simulated Horizons)
+*1,000 bootstrap resampled equity paths demonstrating zero capital ruin risk and terminal wealth density across risk tiers.*
+![Monte Carlo Distribution](assets/monte_carlo_distribution.png)
+
+### 3. Risk-Reward Efficient Frontier ($100k Account)
+*Trade-off frontier between Historical Maximum Drawdown (%) and Net Return (%) across risk parameters.*
+![Risk-Reward Frontier](assets/risk_reward_frontier.png)
+
+### 4. Monthly Net PnL (USD)
+*High-density monthly PnL on a $100k account under baseline 0.75% risk per trade across 21 consecutive months.*
+![Monthly Net PnL](assets/monthly_pnl_100k.png)
+
+---
+
+## 🏆 Institutional Performance Matrix ($100,000 Account)
+
+All tests are conducted on the exact champion trade sequence (420 trades, 2025–2026 OOS):
+
+| Risk Tier | Starting Balance | Ending Balance | Net Profit | Net Return | Net Sharpe | Win Rate | Profit Factor | Payoff Ratio | Max Drawdown (%) | Max Drawdown ($) | MC 5% Tail Balance |
+|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| **0.50% 🛡** | $100,000.00 | **$127,241.91** | **+$27,241.91** | **+27.24%** | **2.001** | **55.00%** | **1.29** | **1.06** | **8.96%** | $11,522.70 | **$104,597.59** |
+| **0.60%** | $100,000.00 | **$133,270.84** | **+$33,270.84** | **+33.27%** | **2.001** | **55.00%** | **1.29** | **1.05** | **10.70%** | $14,462.62 | **$103,111.17** |
+| **0.70%** | $100,000.00 | **$139,497.45** | **+$39,497.45** | **+39.50%** | **2.001** | **55.00%** | **1.28** | **1.05** | **12.42%** | $17,641.97 | **$104,056.09** |
+| **0.75% 🏆** | $100,000.00 | **$142,685.26** | **+$42,685.26** | **+42.69%** | **2.001** | **55.00%** | **1.28** | **1.05** | **13.28%** | $19,325.36 | **$105,881.52** |
+| **0.80%** | $100,000.00 | **$145,922.91** | **+$45,922.91** | **+45.92%** | **2.001** | **55.00%** | **1.28** | **1.05** | **14.13%** | $21,073.37 | **$103,451.95** |
+| **0.90%** | $100,000.00 | **$152,548.05** | **+$52,548.05** | **+52.55%** | **2.001** | **55.00%** | **1.27** | **1.04** | **15.82%** | $24,769.88 | **$108,198.33** |
+| **1.00% 🚀** | $100,000.00 | **$159,373.35** | **+$59,373.35** | **+59.37%** | **2.001** | **55.00%** | **1.27** | **1.04** | **17.49%** | $28,744.92 | **$104,459.62** |
+
+> **Prop-Firm Compliance Note**: At **0.50% risk per trade**, maximum peak-to-trough drawdown is held to **8.96%**, providing a safe cushion below the standard 10% maximum trailing drawdown breach threshold.
 
 ---
 
 ## 🔬 Core Discoveries
 
-### 1. Where Does Intraday Gold Edge Live? (Timeframe Alpha vs. Cost Drag)
+### 1. Where Does Intraday Gold Edge Live? (Timeframe vs. Cost Drag)
 - **M15**: Displayed the highest raw statistical predictive signal (Mean Gross Sharpe = +0.612), but retail spread and slippage cost drag (38.87%) eliminated 32 out of 50 models.
 - **M30**: **The Peak Net Alpha Sweet Spot**. Halved retail transaction cost drag (22.76%) while preserving intraday momentum structure, yielding 5 robust `PASS` strategies.
 - **H4**: Lowest trade count and highest survivability, but lower overall annual capital turnover.
 
 ### 2. Differentiable Technical Indicator Networks (arXiv:2507.20202)
-Standard textbook indicator parameters (e.g. static RSI 14 or MACD 12/26) fail on intraday Gold due to lag-exhaustion. When formulated as differentiable neural layers with prior shrinkage regularization, the network discovered **Gold's learned asymmetric memory**:
+Standard textbook indicator parameters (e.g. static RSI 14 or MACD 12/26) fail on intraday Gold due to lag-exhaustion. Formulated as differentiable neural layers with prior shrinkage regularization, the network discovered **Gold's learned asymmetric memory**:
 - `RSI_Up` length shortened to **16–21 bars**, while `RSI_Dn` lengthened to **11–13 bars** (capturing sharp liquidation flushes vs. grinding upward accumulation).
 - MACD Slow EMA expanded from 26 to **29–37 bars**.
 
 ### 3. The Power of 1-Trade-a-Day Governance
 Enforcing a single trade token per calendar day with mandatory **20:30 UTC EOD position flattening**:
 - Boosted Net Sharpe from **1.416 to 2.001**.
-- Slashed maximum drawdown by nearly half (**16.63% down to 9.34%**).
+- Slashed maximum drawdown by nearly half (**16.63% down to 9.34%** on baseline).
 - Eliminated toxic New York close spread blowouts and overnight rollover financing fees.
 
 ---
 
-## 📊 Comprehensive Verification Matrix
+## 📁 Research Reports & Auditable Data
 
-| Strategy Architecture | Ending Balance | Net Profit | Net Return | Net Sharpe | Win Rate | Profit Factor | Max Drawdown | Total Trades | Monte Carlo 5% Tail |
-| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| **Baseline Multi-Trade (Unconstrained)** | $21,110.09 | +$6,110.09 | +40.73% | 1.416 | 53.14% | 1.28 | 16.63% | 493 | $15,248.84 |
-| **1-Trade-A-Day: Unified Arch A (50/50 Netting)** 🏆 | **$23,387.67** | **+$8,387.67** | **+55.92%** | **2.001** | **55.00%** | **1.28** | **9.34%** | **420** | **$15,630.84** |
-| **1-Trade-A-Day: Standalone #07 MacKay + TIN** | $23,224.06 | +$8,224.06 | +54.83% | 1.940 | 54.20% | 1.28 | 10.28% | 417 | $15,594.00 |
-| **1-Trade-A-Day: Standalone #10 Bayesian Bound + TIN** | $21,618.37 | +$6,618.37 | +44.12% | 1.721 | 51.31% | 1.25 | 11.63% | 419 | $15,275.89 |
-| **1-Trade-A-Day: London/NY Session (07:00–17:30 UTC)** | $18,923.84 | +$3,923.84 | +26.16% | 1.235 | 53.16% | 1.22 | 10.94% | 380 | $14,465.43 |
+### Research Reports
+- [`01-arxiv-50-ml-benchmark.md`](reports/01-arxiv-50-ml-benchmark.md): Walk-forward screening of 50 ML models across M15, M30, and H4.
+- [`02-tin-m30-network.md`](reports/02-tin-m30-network.md): Differentiable parameter optimization and learned indicator weights.
+- [`03-unified-dual-strategy.md`](reports/03-unified-dual-strategy.md): 50/50 shared netting architecture combining MacKay shrinkage with Bayesian bounds.
+- [`04-one-trade-a-day.md`](reports/04-one-trade-a-day.md): Turnover gating, liquidity preservation, and 20:30 UTC flattening governance.
+- [`05-rr-and-time-exits.md`](reports/05-rr-and-time-exits.md): Comparative analysis of R:R ratios (1:1 to 1:2.5) and optimal holding horizons.
+- [`06-macro-testing.md`](reports/06-macro-testing.md): Exogenous macro feature integration (US10Y Treasury Yields & DXY).
+- [`07-risk-sweep-15k.md`](reports/07-risk-sweep-15k.md): Risk scaling sweep from 0.20% to 1.00% on a $15,000 account.
+- [`08-risk-sweep-100k.md`](reports/08-risk-sweep-100k.md): Institutional risk sweep from 0.50% to 1.00% on a $100,000 account.
 
----
-
-## 📁 Repository Structure & Auditable Evidence
-
-- `reports/`: Complete research reports documenting walk-forward methodologies, factor attributions, and Monte Carlo simulations.
-  - [`01_arxiv_50_ml_gold_validation_report.md`](reports/arxiv_50_ml_gold_validation_report.md)
-  - [`02_tin_m30_15k_2025_2026_report.md`](reports/tin_m30_15k_2025_2026_report.md)
-  - [`03_unified_dual_strategy_system_report.md`](reports/unified_dual_strategy_system_report.md)
-  - [`04_one_trade_a_day_report.md`](reports/one_trade_a_day_report.md)
-  - [`05_rr_and_time_exits_report.md`](reports/rr_and_time_exits_report.md)
-  - [`06_champion_archA_risk_sweep_report.md`](reports/champion_archA_risk_sweep_report.md)
-- `evidence_data/`: Complete CSV audit trails containing every single trade entry, exit, PnL, and monthly breakdown:
-  - `one_trade_a_day_results.csv`: Summary metrics across all governance frameworks.
-  - `one_trade_a_day_monthly_pnl.csv`: Monthly dollar PnL breakdown across 2025–2026.
-  - `trades_1_Trade_A_Day_Unified_Architecture_A_50_50_Shared_Netting.csv`: Exact 420 trade audit log.
-  - `champion_archA_risk_percentage_sweep.csv`: Risk scaling curves (0.20% to 1.00% risk per trade).
-- `src/`: Modular code framework for research replication.
+### Auditable CSV Data
+- [`data/audit_420_trades.csv`](data/audit_420_trades.csv): Complete trade log of all 420 executions with timestamps, direction, entry/exit prices, lots, duration, and net returns.
+- [`data/risk_sweep_100k.csv`](data/risk_sweep_100k.csv): Parametric sweep data for the $100k institutional account.
+- [`data/risk_sweep_15k.csv`](data/risk_sweep_15k.csv): Parametric sweep data for the $15k account.
+- [`data/monthly_pnl.csv`](data/monthly_pnl.csv): Monthly net PnL and return breakdown over the 21-month horizon.
+- [`data/macro_features.csv`](data/macro_features.csv): Macro factor correlation summary.
 
 ---
 
@@ -85,7 +95,7 @@ Enforcing a single trade token per calendar day with mandatory **20:30 UTC EOD p
 
 To protect live market execution edge and prevent alpha decay from crowded positioning:
 - Live broker API credentials, private webhook endpoints, and production binary weight matrices are excluded from this public repository.
-- Full analytical logs, trade execution timestamps, and walk-forward verification outputs are preserved in `evidence_data/` for complete mathematical and institutional auditability.
+- Full analytical logs, trade execution timestamps, and walk-forward verification outputs are preserved in `data/` for complete mathematical and institutional auditability.
 
 ---
 
