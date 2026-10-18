@@ -105,3 +105,5 @@ To protect live market execution edge and prevent alpha decay from crowded posit
 2. **Kendall, A., & Gal, Y. (2017)**. *What Uncertainties Do We Need in Bayesian Deep Learning for Computer Vision?* Advances in Neural Information Processing Systems (NeurIPS).
 3. **Lu, L. (2025)**. *Technical Indicator Networks: Differentiable Financial Indicator Optimization*. arXiv:2507.20202.
 4. **Bailey, D. H., & López de Prado, M. (2014)**. *The Deflated Sharpe Ratio: Correcting for Selection Bias, Backtest Overfitting, and Non-Normality*. Journal of Portfolio Management.
+
+FEEL FREE TO ADD ON TO THE RESEARCH
